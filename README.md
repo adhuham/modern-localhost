@@ -1,4 +1,4 @@
-# 🏠 Modern Localhost
+# Modern Localhost
 Modern Localhost is a beautified version of your typical localhost index page.
 
 ![Modern Localhost with the grayish theme](assets/screenshot.png)
