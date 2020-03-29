@@ -4,6 +4,56 @@ Modern Localhost is a beautified version of your typical localhost index page.
 ## Install
 Download this repo and extract `index.php` to your `www` folder, or whatever is your server's root. You can also replace your webserver's default index page to it.
 
+## Configuration
+You can edit the `$options` array at the top of the `index.php` to customize it your needs.
+```php
+...
+$options = [
+    /**
+     * Set the theme
+     * Available themes: bluey, pinky, purply
+    */
+    'theme' => 'grayish',
+
+    /**
+     * Exclude files or folders
+     * use wildcard pattern. eg: ['.git*', '*.exe', '*.sh']
+    */
+    'exclude' => [ ],
+
+    /**
+     * Add extra tools 
+     * [label] => '[link of the tool]
+     * eg: 'phpMyAdmin' => 'http://localhost/phpMyAdmin'
+    */
+    'extras' => [
+	    'phpinfo()' => '?phpinfo=1'
+    ]
+];
+...
+```
+
+#### Themes
+Available values for the `theme` are: `grayish` `bluey` `pinky` `purply`
+
+#### Excluding Files/Folders
+You can tell it to exclude certain files and folders. For example to tell it to exclude all the `.exe` files you can specify:
+```php
+...
+  'exclude' => [
+    '*.exe'
+  ],
+...
+```
+To exclude multiple files and folders:
+```php
+...
+  'exclude' => [
+    '*.exe', '*.git', `*.sh', 'config/*'
+  ],
+...
+```
+
 ## Support
 This project is targeted for so-called LAMP environments (Linux, Apache, MySQL and PHP). Also equally supports MAMP and WAMP. Other environments can also be supported but with a little bit of tweak.
 
