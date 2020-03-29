@@ -1,7 +1,7 @@
 # Modern Localhost
 Modern Localhost is a beautified version of your typical localhost index page.
 
-![Modern Localhost with the grayish theme](assets/screenshot.png)
+![Modern Localhost with the grayish theme](assets/screenshot2.png)
 
 ## Install
 Download this repo and extract `index.php` to your `www` folder, or whatever is your server's root. You can also replace your webserver's default index page to it.
