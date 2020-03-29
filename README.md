@@ -37,7 +37,7 @@ $options = [
 
 #### Themes
 Available values for the `theme` are: `grayish` `bluey` `pinky` `purply`
-![Screenshot of available themes](assets/themes2.png)
+![Screenshot of available themes](assets/themes1.png)
 
 #### Excluding Files/Folders
 You can tell it to exclude certain files and folders. For example to tell it to exclude all the `.exe` files you can specify:
